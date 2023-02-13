@@ -42,3 +42,11 @@
   height: 120px;
   border-radius: 20px;
 }
+
+.a-title {
+  font-weight: 400;
+}
+
+.a-sub {
+  margin: 20px 0px;
+}
