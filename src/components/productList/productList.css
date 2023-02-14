@@ -21,4 +21,5 @@
 
 .p1-list {
   display: flex;
+  flex-wrap: wrap;
 }
