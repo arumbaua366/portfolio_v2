@@ -1,4 +1,5 @@
 import "./productList.css";
+import Product from "../product/Product";
 
 const ProductList = () => {
   return (
@@ -10,6 +11,13 @@ const ProductList = () => {
           Beautiful homes, stunning portfolio styles & a whole lot more awaits
           inside.
         </p>
+      </div>
+      <div className="p1-list">
+        <Product />
+        <Product />
+        <Product />
+        <Product />
+        <Product />
       </div>
     </div>
   );
