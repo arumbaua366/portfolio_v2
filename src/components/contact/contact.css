@@ -45,3 +45,12 @@
 .c-desc {
   font-weight: 200;
 }
+
+input {
+  width: 50%;
+  height: 50px;
+  border: none;
+  border-bottom: 1px solid black;
+  margin: 10px 0px;
+  font-size: 14px;
+}
