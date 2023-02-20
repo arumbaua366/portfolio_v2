@@ -2,13 +2,31 @@ import "./contact.css";
 import Phone from "../../img/phone.png";
 import Email from "../../img/email.png";
 import Address from "../../img/address.png";
-import { useRef } from "react";
+import { useRef, useState } from "react";
+import emailjs from "emailjs-com";
 
 const Contact = () => {
   const formRef = useRef();
+  const [done, setDone] = useState(false);
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    emailjs
+      .sendForm(
+        "service_0dby7eb",
+        "template_elkr4pe",
+        formRef.current,
+        "lwN_dQmwozZyww9IO"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
   };
 
   return (
@@ -44,6 +62,7 @@ const Contact = () => {
             <input type="text" placeholder="Email" name="user_email" />
             <textarea rows="5" placeholder="Message" name="message"></textarea>
             <button>Submit</button>
+            {done && "Thank you"}
           </form>
         </div>
       </div>
