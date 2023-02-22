@@ -3,10 +3,17 @@ import Intro from "./components/intro/Intro";
 import ProductList from "./components/productList/ProductList";
 import Contact from "./components/contact/Contact";
 import Toggle from "./components/toggle/Toggle";
+import { ThemeContext } from "./context";
 
 const App = () => {
+  const theme = useContext(ThemeContext);
   return (
-    <div>
+    <div
+      style={{
+        backgroundColor: darkMode ? "#222" : "white",
+        color: darkMode && "white",
+      }}
+    >
       <Toggle />
       <Intro />
       <About />
