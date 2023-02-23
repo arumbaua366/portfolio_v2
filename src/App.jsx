@@ -10,6 +10,9 @@ const App = () => {
   const theme = useContext(ThemeContext);
   const darkMode = theme.state.darkMode;
   return (
+    /**
+     * note: can add dark mode useState and set dark mode in each component. this will be okay for smaller apps but can become problematic if you have a site with a lot of components
+     */
     <div
       style={{
         backgroundColor: darkMode ? "#222" : "white",
