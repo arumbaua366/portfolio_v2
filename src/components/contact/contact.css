@@ -50,6 +50,10 @@
   font-weight: 200;
 }
 
+form {
+  margin-top: 20px;
+}
+
 input {
   width: 50%;
   height: 50px;
@@ -74,4 +78,10 @@ button {
   color: white;
   font-weight: 500;
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .c-wrapper {
+    flex-direction: column;
+  }
 }

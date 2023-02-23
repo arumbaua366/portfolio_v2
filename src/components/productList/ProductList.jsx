@@ -4,8 +4,8 @@ import { products } from "../../data";
 
 const ProductList = () => {
   return (
-    <div className="p1">
-      <div className="p1-texts">
+    <div className="pl">
+      <div className="pl-texts">
         <h1 className="pl-title">Create & inspire. It's Lama</h1>
         <p className="pl-desc">
           Lama is a creative portfolio that your work has been waiting for.
@@ -13,7 +13,7 @@ const ProductList = () => {
           inside.
         </p>
       </div>
-      <div className="p1-list">
+      <div className="pl-list">
         {products.map((item) => (
           <Product key={item.id} img={item.img} link={item.link} />
         ))}
