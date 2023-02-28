@@ -6,12 +6,13 @@ Portfolio app built with React and vanilla CSS
 
 ## Features
 
+- Dark mode
+
 ## Technologies
 
 - React
 - CSS
 - EmailJS
--
 
 ## License
 
