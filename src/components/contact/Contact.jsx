@@ -42,7 +42,7 @@ const Contact = () => {
           </h1>
           <div className="c-info">
             <div className="c-info-item">
-              <img src={Phone} alt="" className="c-icon" />1 (123) 123-1234
+              <img src={Phone} alt="" className="c-icon" />1 (650) 296-5885
             </div>
             <div className="c-info-item">
               <img src={Email} alt="" className="c-icon" />
@@ -50,14 +50,14 @@ const Contact = () => {
             </div>
             <div className="c-info-item">
               <img src={Address} alt="" className="c-icon" />
-              San Jose, CA
+              Sacramento, CA
             </div>
           </div>
         </div>
         <div className="c-right">
           <p className="c-desc">
-            <b>What’s your story?</b> Get in touch. Always available for
-            freelancing if the right project comes along. me.
+            <b>Let's chat!</b> Please get in touch. I would love to build
+            something great together.
           </p>
           <form ref={formRef} onSubmit={handleSubmit}>
             <input
